@@ -1,0 +1,19 @@
+A={'Andy':89,
+'Jane':76,
+'kimi':96,
+'alice':69,
+'tina':82,
+'justin':75,
+'caroline':90}
+b=A.values()
+c=A.keys()
+B=list(b)
+C=list(c)
+ma=B.index(max(B))
+mi=B.index(min(B))
+sum=0
+for i in range(10):
+    sum=B[i]+sum
+    i=i+1
+    average=sum/10
+    print('最高分同学为:',C[ma],"分数为:",max(B),'最低分同学为:',C[mi],"分数为:",min(B),'平均分为:',average)
